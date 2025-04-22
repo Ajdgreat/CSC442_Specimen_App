@@ -1,0 +1,88 @@
+/* Overall page style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f5f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+}
+
+/* Container for the form */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-top: 6px solid #003366; /* Dark blue accent */
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Form labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+/* Button style */
+button {
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #00264d;
+}
+
+/* Result and error messages */
+.result {
+    color: #007b00;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.error {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}

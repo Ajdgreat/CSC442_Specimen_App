@@ -1,0 +1,36 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Specimen Size Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Specimen Size Calculator</h2>
+
+        {% if result %}
+            <p class="result">Actual Size: {{ result }}</p>
+        {% endif %}
+
+        {% if error %}
+            <p class="error">Error: {{ error }}</p>
+        {% endif %}
+
+        <form method="POST">
+            <label>Username:</label>
+            <input type="text" name="username" required>
+
+            <label>Observed Size (mm):</label>
+            <input type="text" name="observed" required>
+
+            <label>Magnification:</label>
+            <input type="text" name="magnification" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+
+</body>
+</html>
